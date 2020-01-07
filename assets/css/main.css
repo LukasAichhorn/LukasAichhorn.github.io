@@ -261,6 +261,7 @@ input, select, textarea {
 
 	pre {
 		-webkit-overflow-scrolling: touch;
+
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
@@ -2752,7 +2753,7 @@ input, select, textarea {
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			width: 100%;
 		}
 
 			.tiles article .image {
@@ -2826,9 +2827,7 @@ input, select, textarea {
 				opacity: 0;
 			}
 
-			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
-				width: 60%;
-			}
+
 
 			.tiles article:nth-child(6n - 5):before {
 				background-color: #6fc3df;
@@ -3950,3 +3949,18 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/*-------------my Classes----------*/
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    float: right;
+
+
+}
+.infoBox{
+    max-width:20%;
+
+}
+
