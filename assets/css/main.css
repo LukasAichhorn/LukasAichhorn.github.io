@@ -2830,23 +2830,23 @@ input, select, textarea {
 
 
 			.tiles article:nth-child(6n - 5):before {
-				background-color: #6fc3df;
+				background-color: #3C91E6;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color: #FDB833;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #DF3B57;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #e7b788;
+				background-color: #FF8552;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #885053;
 			}
 
 			.tiles article:nth-child(6n):before {
@@ -3379,7 +3379,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("/images/nick-herasimenka-rnRN0Tzpb1U-unsplash.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3391,7 +3391,7 @@ input, select, textarea {
 		background-size: cover;
 		border-bottom: 0 !important;
 		cursor: default;
-		height: 60vh;
+		height: 40vh;
 		margin-bottom: -3.25em;
 		max-height: 32em;
 		min-height: 22em;
@@ -3951,16 +3951,68 @@ input, select, textarea {
 		}
 
 /*-------------my Classes----------*/
-.container{
+.container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: flex-end;
     float: right;
+    z-index: 3;
+    opacity: 0;
+
+
+}
+
+
+.container :nth-child(2) {
+    margin-right: 0rem;
 
 
 }
 .infoBox{
-    max-width:20%;
+    max-width: 40%;
+    margin-right: 2rem;
+
+}
+.infoBox > li{
+
+    text-decoration: none;
+    list-style: none;
+    font-size: 0.7em;
+font-weight: 600;
+letter-spacing: 0.25em;
+margin-bottom: 0;
+}
+
+.tiles article:hover > .container {
+
+    opacity: 1;
+-webkit-transition:opacity 500ms ease-out;
+-moz-transition:opacity 500ms ease-out;
+-o-transition:opacity 500ms ease-out;
+transition:opacity 500ms ease-out;
+
+}
+.project_cont{
+ display: flex;
+
 
 }
 
+.visualisation{
+    width: 50vh;
+    flex-grow:2;
+}
+.project_Cockpit{
+flex-grow:1;
+
+}
+
+.form_cont{
+    display: flex;
+
+
+}
+#ArrSize{
+
+    color: black;
+}
