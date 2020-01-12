@@ -19,8 +19,8 @@
 
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style3">
-						<a href="index.html" class="logo"><strong>Portfolio/Projects</strong> <span>by Lukas Aichhorn</span></a>
+					<header id="header" class="alt style4">
+						<a href="index.html" class="logo"><strong>Portfolio</strong> <span>Lukas Aichhorn</span></a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -42,16 +42,16 @@
 
 				<!-- Banner -->
 				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style3">
+					<section id="banner" class="style4">
 						<div class="inner">
 							<span class="image">
 								<img src="images/pic07.jpg" alt="" />
 							</span>
 							<header class="major">
-								<h1>Visualising A* Pathfinding</h1>
+								<h1>One Dollar Game</h1>
 							</header>
 							<div class="content">
-								<p>Showing the shortes path from A to B using A* algorithm</p>
+								<p>Making a game with graphs</p>
 							</div>
 						</div>
 					</section>
@@ -64,41 +64,34 @@
 								<div class="inner project_cont">
 
 									<div class="visualisation">
-                                        <div class="canvas"></div>
+                                        <div class="canvas" id="canvas_container"></div>
                                     </div>
 
 
                                     <div class="project_Cockpit">
-                                      
-                                    <div class="form_cont">
                                         
-
+                                         <div class="form_cont">
                                         <div class="form_col">
-                                        <h3>manual:</h3>
-                                            <p><li>First click defines starting point.</li>
-                                                <li>Second click defines endpoint.</li>
-                                                <li>Now you can define Wall elements.</li>
-                                                <li>if you are happy with the layout click.</li></p>    
+                                            <button type="button"  id="QS" class="myButton">Generate new Game</button>
+
+                                        <button type="button"  id="BS" class="myButton">Not solveable</button>
                                         </div>
                                         </div>
-                                        <div class="form_cont">
-                                        <div class="form_col">
-
-                                        <button type="button"  id="BTN-Start" class="myButton">Find Shortes path</button>
-                                        <button type="button"  id="BTN-Clear" class="myButton">Clear Grid</button>
-                                        
-                                            </div>
-                                        </div>
-
-
-                                        </div>
 
 
 
 
 
 
-                                        </div>
+
+                                                  </div>
+
+
+
+
+
+
+                                    </div>
 
 
 							</section>
@@ -186,7 +179,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <script src="assets/js/A_star_alg.js"></script>
-            <script src="assets/js/A_star_alg_helper.js"></script>
+            <script src="assets/js/graphGame.js"></script>
+            <script src="assets/js/canvas.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+
 	</body>
 </html>
