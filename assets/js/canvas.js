@@ -1,4 +1,23 @@
 
+    
+    
+    
+    
+   
+    
+    $('#GenerateGame_btn').click(function() {
+        clear();
+        createNodeLogic(7);
+        createNodes();
+        redraw();
+    });
+    
+    
+
+
+
+
+
 
 
 function setup() {

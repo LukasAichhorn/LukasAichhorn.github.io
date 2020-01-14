@@ -142,44 +142,58 @@ function createNodeLogic(numberOfNodes){
 
 var arrOfNodes = new Array();
 function createNodes(){
+    let W = $('.canvas').width();
+    let H = $('.canvas').height();
+    
+    
+    var prev_x;
+    var prev_y;
+    var x=40;
+    var y=40;
+    var radius=25;
+    
+    let threshold = 0.4;
     //reset Node array
     arrOfNodes = new Array();
-   var prev_x=50;
-    var prev_y=50;
-    var x,y;
-    let threshold = 0.2;
+  
+    
+    
     for(i=0;i<matrix.length; i++){
+        //generate RandomScore for node
+        var randScore =randomInt(-5,5);
+        //if i =0 we create the initial node with starting values
+        arrOfNodes[i]= new Node("Node"+i,x,y,matrix[i],randScore); 
+        //we set up spaceboundaries for x and y
         
+        console.log("current_x: "+x);
+        console.log("current_y: "+y);
+        //min max distance to next node
+        var padding= x * threshold;
         
-        console.log("prev_x"+prev_x);
-        console.log("prev_y"+prev_y);
-        //get previous node position and get random number outside of boundaries
-        let upperbound_x =prev_x + prev_x * threshold; console.log("uB_x: "+upperbound_x);
-        let lowerbound_x =prev_x - prev_x * threshold; console.log("lB_x: "+lowerbound_x);
+        //calculate upper and lower bounds in both dirextions
+        let upperbound_x =x + radius + padding; console.log("uB_x: "+upperbound_x);
+        let lowerbound_x =x - radius - padding; console.log("lB_x: "+lowerbound_x);
         
+        let callsx=1;
         do{  
-            x = randomInt(100, 800);
-            
+            x = randomInt(0, W);
+            callsx++;
+            if (callsx > 100) { debugger; }
         }while(x < upperbound_x && x > lowerbound_x); // if false continoue
          console.log(x+"  is inside boundaries");    
-            
         
         
-        let upperbound_y =prev_y + prev_y * threshold;
-        let lowerbound_y =prev_y - prev_y * threshold;
+        let upperbound_y = y + radius + padding; console.log("uB_y: "+upperbound_y);
+        let lowerbound_y =y + radius + padding; console.log("lB_y: "+lowerbound_y);
         
+        let callsy=1;
         do{
-            y =randomInt(100 , 400);
+            y =randomInt(0, H);
+            callsy++;
+            if (callsy > 100) { debugger; }
         }while(y < upperbound_y && y > lowerbound_y);  // if flase continoue            
-              
-        
-        var randScore =randomInt(-5,5);
-        
-        arrOfNodes[i]= new Node("Node"+i,x,y,matrix[i],randScore);
-        
-        prev_x =x;
-        prev_y =y;
-       
+             console.log(y+"  y is inside boundaries"); 
+          
     }
     console.log(arrOfNodes);
 return arrOfNodes;
