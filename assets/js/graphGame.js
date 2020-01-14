@@ -160,7 +160,7 @@ function createNodes(){
     
     for(i=0;i<matrix.length; i++){
         //generate RandomScore for node
-        var randScore =randomInt(-5,5);
+        var randScore =randomInt(-3,5);
         //if i =0 we create the initial node with starting values
         arrOfNodes[i]= new Node("Node"+i,x,y,matrix[i],randScore); 
         //we set up spaceboundaries for x and y
