@@ -87,6 +87,10 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
+        
+        .Mycontainer{
+            display: none;
+        }
 
 	}
 
@@ -145,6 +149,9 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+            .Mycontainer{
+            display: none;
+        }
 
 		}
 
@@ -229,6 +236,10 @@ input, select, textarea {
 		h3 {
 			font-size: 1.25em;
 		}
+        
+        .Mycontainer{
+            display: none;
+        }
 
 	}
 
@@ -1276,6 +1287,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+            .Mycontainer{
+                display: none;
+            }    
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1866,6 +1880,10 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
+            .Mycontainer{
+                display: none;
+                
+            }
 			form > .fields {
 				width: calc(100% + 3em);
 				margin: -1.5em 0 2em -1.5em;
@@ -2424,6 +2442,10 @@ input, select, textarea {
 			}
 
 		@media screen and (max-width: 480px) {
+            
+            .Mycontainer{
+                display: none;
+            }
 
 			ul.pagination li:nth-child(n+2):nth-last-child(n+2) {
 				display: none;
@@ -3955,7 +3977,7 @@ input, select, textarea {
 		}
 
 /*-------------my Classes----------*/
-.container {
+.Mycontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -3967,7 +3989,7 @@ input, select, textarea {
 }
 
 
-.container :nth-child(2) {
+.Mycontainer :nth-child(2) {
     margin-right: 0rem;
 
 
@@ -3987,7 +4009,7 @@ letter-spacing: 0.25em;
 margin-bottom: 0;
 }
 
-.tiles article:hover > .container {
+.tiles article:hover > .Mycontainer {
 
     opacity: 1;
 -webkit-transition:opacity 500ms ease-out;
@@ -4009,7 +4031,7 @@ transition:opacity 500ms ease-out;
 display: flex;
 
 flex-direction: column;
-max-width: 20vw;
+
 
 }
 
@@ -4017,9 +4039,9 @@ max-width: 20vw;
     display: flex;
 
     margin:0.1rem;
-
-
 }
+
+
 
 .form_col{
     flex:1;
@@ -4043,6 +4065,7 @@ flex-shrink:1;
 margin-right: 0.2rem;
 color: black;
 min-width: 0;
+width: 100%;
 text-align: center;
 
 }
@@ -4064,6 +4087,7 @@ text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 50vh;
+    min-width: 50vw;
     flex-grow:2;
 
 }
@@ -4144,4 +4168,44 @@ text-align: center;
     text-align: center;
     align-content: center;
     }
+
+
+@media screen and (max-width: 576px) {
+    
+    .Mycontainer{
+        display: none;
+    }
+    
+        .project_cont {
+    flex-direction: column-reverse;
+}
+    
+}
+    
+}
+@media screen and (max-width: 736px) {
+    
+    .Mycontainer{
+        display: none;
+    }
+    .project_cont {
+    flex-direction: column-reverse;
+}
+}
+@media screen and (max-width: 981px) {
+    
+    .Mycontainer{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    
+    .form_cont{
+        flex-wrap: wrap;
+        
+    }
+        
+}
 
