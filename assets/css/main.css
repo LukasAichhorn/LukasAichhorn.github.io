@@ -3413,9 +3413,10 @@ input, select, textarea {
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
 		background-position: bottom;
-		background-position-y:-29vw;
+		background-position-y: -563px;
+    	background-position-x: 0px;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100%;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 40vh;
@@ -4169,7 +4170,31 @@ text-align: center;
     text-align: center;
     align-content: center;
     }
+@media screen and (max-width: 480px) {
+	#banner.major{
+	background-position: center;
+    background-size: cover;
+    background-position-y: -393px;
+    background-position-x: 0px;
+	}
 
+@media screen and (max-width: 576px) {
+	#banner.major {
+	background-position: top;
+    background-size: contain;
+    background-position-x: 0px;
+    background-position-y: -131px;
+}
+
+@media screen and (max-width: 736px){
+	#banner.major {
+	background-position: top;
+    background-size: contain;
+    background-position-x: 0px;
+    background-position-y: -125px;
+
+	}
+}
 
 @media screen and (max-width: 576px) {
     
@@ -4180,10 +4205,7 @@ text-align: center;
         .project_cont {
     flex-direction: column-reverse;
 	}
-    #banner{
-    	background-position: bottom;
-    	background-position-y:-29vw;    }
-}
+   
     
 }
 @media screen and (max-width: 736px) {
@@ -4194,18 +4216,14 @@ text-align: center;
     .project_cont {
     flex-direction: column-reverse;
 	}
-	#banner{
-    	background-position: bottom;
-    	background-position-y:-29vw;    }
+	
 }
 @media screen and (max-width: 981px) {
     
     .Mycontainer{
         display: none;
     }
-    #banner{
-    	background-position: bottom;
-    	background-position-y:-29vw;    }
+       }
     
 }
 
@@ -4215,10 +4233,21 @@ text-align: center;
         flex-wrap: wrap;
         
     }
-    #banner{
-    	background-position: bottom;
-    	background-position-y:-29vw;    }
-
+    #banner {
+    background-position: center;
+    background-size: 126%;
+    background-position-x: 0px;
+    background-position-y: -366px;
+    }
         
 }
 
+@media screen and (max-width: 1488px) {
+
+ #banner {
+    background-position: center;
+    background-size: 123%;
+    background-position-x: 0px;
+    background-position-y: -540px;
+    }
+}
