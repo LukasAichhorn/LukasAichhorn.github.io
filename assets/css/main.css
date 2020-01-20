@@ -4178,8 +4178,9 @@ text-align: center;
     
         .project_cont {
     flex-direction: column-reverse;
-}
-    
+	}
+    #banner{
+    	background-position: bottom;    }
 }
     
 }
@@ -4190,13 +4191,17 @@ text-align: center;
     }
     .project_cont {
     flex-direction: column-reverse;
-}
+	}
+	#banner{
+    	background-position: bottom;    }
 }
 @media screen and (max-width: 981px) {
     
     .Mycontainer{
         display: none;
     }
+    #banner{
+    	background-position: bottom;    }
     
 }
 
@@ -4206,7 +4211,8 @@ text-align: center;
         flex-wrap: wrap;
         
     }
-    
+    #banner{
+    	background-position: bottom;    }
 
         
 }
