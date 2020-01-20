@@ -3412,7 +3412,7 @@ input, select, textarea {
 		display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
-		background-position: center -581px;
+		background-position: bottom;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -4206,9 +4206,7 @@ text-align: center;
         flex-wrap: wrap;
         
     }
-    #banner{
-    	background-position: center -263px;
-    }
+    
 
         
 }

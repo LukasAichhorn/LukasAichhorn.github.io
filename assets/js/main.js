@@ -26,7 +26,7 @@
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
 	 */
-	/*$.fn._parallax = (browser.name == 'ie' || browser.name == 'edge' || browser.mobile) ? function() { return $(this) } : function(intensity) {
+	$.fn._parallax = (browser.name == 'ie' || browser.name == 'edge' || browser.mobile) ? function() { return $(this) } : function(intensity) {
 
 		var	$window = $(window),
 			$this = $(this);
@@ -53,7 +53,7 @@
 
 			on = function() {
 
-				$t.css('background-position', 'center 100%, center 100%, center -581px');
+				$t.css('background-position', 'center 100%, center -581px');
 
 				$window
 					.on('scroll._parallax', function() {
@@ -89,7 +89,7 @@
 
 		return $(this);
 
-	};*/
+	};
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
