@@ -4260,3 +4260,14 @@ text-align: center;
     }
 	
 }
+@media screen and (max-width: 360px){
+
+	 #banner{
+    	
+       
+    	background-size: 250%;
+    	background-position: bottom;
+    	background-position-x:0px;
+    }
+	
+}
