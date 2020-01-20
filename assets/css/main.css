@@ -3413,6 +3413,7 @@ input, select, textarea {
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
 		background-position: bottom;
+		background-position-y:-29vw;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
@@ -4180,7 +4181,8 @@ text-align: center;
     flex-direction: column-reverse;
 	}
     #banner{
-    	background-position: bottom;    }
+    	background-position: bottom;
+    	background-position-y:-29vw;    }
 }
     
 }
@@ -4193,7 +4195,8 @@ text-align: center;
     flex-direction: column-reverse;
 	}
 	#banner{
-    	background-position: bottom;    }
+    	background-position: bottom;
+    	background-position-y:-29vw;    }
 }
 @media screen and (max-width: 981px) {
     
@@ -4201,7 +4204,8 @@ text-align: center;
         display: none;
     }
     #banner{
-    	background-position: bottom;    }
+    	background-position: bottom;
+    	background-position-y:-29vw;    }
     
 }
 
@@ -4212,7 +4216,8 @@ text-align: center;
         
     }
     #banner{
-    	background-position: bottom;    }
+    	background-position: bottom;
+    	background-position-y:-29vw;    }
 
         
 }
