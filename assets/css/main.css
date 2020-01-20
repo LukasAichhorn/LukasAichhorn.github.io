@@ -3412,7 +3412,7 @@ input, select, textarea {
 		display: flex;
 		padding: 6em 0 2em 0 ;
 		background-attachment: fixed;
-		background-position: center;
+		background-position: center 100%, center 100%, center -581px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
