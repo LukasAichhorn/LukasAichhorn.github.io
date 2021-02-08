@@ -4114,13 +4114,10 @@ text-align: center;
 
 
 
-.grid div {
-    
-    
-    
+.grid div {   
     float: left;
     text-align: center;    
-    box-shadow: 0 0 0 0.2px #ffffff;
+    box-shadow: 0 0 0 0.6px #ffffff;
     
     
     
@@ -4130,21 +4127,22 @@ text-align: center;
 
 .grid div:hover{
  background-color: aqua;
+ border:2px solid white ;
     
 }
 
 .SP{
     background-color:darkorange !important;
-    
+	border:2px solid white ;
 }
 .EP{
-    background-color:darkseagreen !important;
-    
+    background-color:rgb(62, 170, 35) !important;
+	border:2px solid white ;
 }
 
 .wall{
-    background-color:darkslategrey !important;
-    
+    background-color:rgb(2, 1, 0) !important;
+	border:2px solid white ;
 }
 
 
@@ -4154,14 +4152,14 @@ text-align: center;
     background-color: cornflowerblue !important;
 }
 
-@-webkit-keyframes finalPath {
-  from {background-color: white;}
+@keyframes finalPath {
+  from {background-color: rgba(255, 255, 255, 0);}
   to {background-color: cornflowerblue;}
 }
 
 .FP{
     
- background-color: chartreuse !important;
+ background-color: rgba(23, 248, 109, 0.76) !important;
     
 }
 
